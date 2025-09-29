@@ -1,4 +1,3 @@
-package inverso;
 
 public class Inverso {
 
@@ -23,3 +22,4 @@ public class Inverso {
         return invertir(cociente, resultado * 10 + residuo);
     }
 }
+
