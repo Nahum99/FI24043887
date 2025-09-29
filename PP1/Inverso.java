@@ -3,7 +3,7 @@ public class Inverso {
 
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.out.println("Por favor ingrese un número natural como argumento.");
+            System.out.println("Hola, ingrese un número natural.");
             return;
         }
 
@@ -22,4 +22,5 @@ public class Inverso {
         return invertir(cociente, resultado * 10 + residuo);
     }
 }
+
 
