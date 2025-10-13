@@ -1,10 +1,6 @@
 # Práctica Programada 2 - SC-304  
 **Curso:** Estructuras de Datos  
 **Profesor:** Luis Andrés Rojas Matey  
-
----
-
-## 👤 Datos del estudiante
 **Estudiante:** Nahúm Mejía Castillo  
 **Carné:** FI24043887  
 
@@ -14,7 +10,7 @@
 Se utilizó **NetBeans 21** como entorno de desarrollo principal, por su compatibilidad con proyectos Java, manejo de paquetes y soporte integrado para Git.  
 Adicionalmente, se empleó **Visual Studio Code** para editar archivos complementarios como `README.md` y `.gitignore`, aprovechando la extensión *Markdown Preview* para verificar el formato.
 
----
+
 
 ## 🌐 Páginas web consultadas
 Durante el desarrollo de esta práctica se consultaron las siguientes fuentes de información para resolver dudas, errores de sintaxis y optimizar el código:
