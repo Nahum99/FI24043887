@@ -27,7 +27,7 @@ Durante el desarrollo de esta práctica se consulto la siguiente fuente de infor
 **Respuesta:**  
 Se explicó cómo leer el contenido del archivo con BufferedReader (envolviendo un FileReader), almacenar cada línea o carácter en una estructura de tipo Stack<String> o Stack<Character>, y luego escribirlos en orden inverso con BufferedWriter o FileWriter.
 
-## 💬 Respuestas a preguntas teóricas
+## Respuestas a preguntas teóricas
 
 ### ¿Cree que exista otra forma de efectuar la inversión del contenido de un archivo sin necesidad de usar una pila?
 Sí, existen varias alternativas para invertir el contenido de un archivo sin utilizar una pila explícitamente. Una opción es usar una lista dinámica como ArrayList, almacenando cada línea o carácter y luego recorriéndola en orden inverso para escribir el archivo. También puede hacerse mediante recursión, donde una función lee hasta el final del archivo y luego escribe los datos en orden inverso al retornar.
