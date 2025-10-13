@@ -4,62 +4,37 @@
 **Estudiante:** Nahúm Mejía Castillo  
 **Carné:** FI24043887  
 
----
 
-## 🧰 IDE o Editor Utilizado
+##  IDE o Editor Utilizado
 Se utilizó **NetBeans 21** como entorno de desarrollo principal, por su compatibilidad con proyectos Java, manejo de paquetes y soporte integrado para Git.  
 Adicionalmente, se empleó **Visual Studio Code** para editar archivos complementarios como `README.md` y `.gitignore`, aprovechando la extensión *Markdown Preview* para verificar el formato.
 
 
 
-## 🌐 Páginas web consultadas
-Durante el desarrollo de esta práctica se consultaron las siguientes fuentes de información para resolver dudas, errores de sintaxis y optimizar el código:
+##  Páginas web consultadas
+Durante el desarrollo de esta práctica se consulto la siguiente fuente de información para resolver dudas, errores de sintaxis y optimizar el código:
 
 - [https://docs.oracle.com/javase/8/docs/api/](https://docs.oracle.com/javase/8/docs/api/) — Documentación oficial de Java.  
-- [https://www.geeksforgeeks.org/](https://www.geeksforgeeks.org/) — Ejemplos y explicaciones sobre pilas, colas y manejo de archivos.  
-- [https://stackoverflow.com/](https://stackoverflow.com/) — Búsqueda de soluciones a errores específicos y snippets útiles.  
-- [https://www.w3schools.com/java/](https://www.w3schools.com/java/) — Repaso general de sintaxis y estructuras básicas.  
 
----
 
-## 🤖 Prompts de Chatbots de IA Utilizados
+
+##  Prompts de Chatbots de IA Utilizados
 
 ### ChatGPT (OpenAI)
 **Consulta:**  
-> ¿Cómo puedo invertir el contenido de un archivo de texto en Java utilizando una pila?
+¿Cómo puedo implementar en Java un programa que lea un archivo de texto carácter por carácter utilizando FileReader, almacene su contenido en una pila y luego lo escriba en otro archivo de forma invertida?
 
-**Respuesta resumida:**  
-ChatGPT explicó cómo leer el contenido del archivo con `BufferedReader`, almacenar cada línea en una `Stack<String>` y luego escribirlas de forma inversa con `BufferedWriter`.  
-También recomendó el uso del bloque `try-with-resources` para el manejo automático de archivos y evitar fugas de recursos.
-
-**Enlace al chat:**  
-[https://chat.openai.com](https://chat.openai.com)
-
----
+**Respuesta:**  
+Se explicó cómo leer el contenido del archivo con BufferedReader (envolviendo un FileReader), almacenar cada línea o carácter en una estructura de tipo Stack<String> o Stack<Character>, y luego escribirlos en orden inverso con BufferedWriter o FileWriter.
 
 ## 💬 Respuestas a preguntas teóricas
 
-### 1️⃣ ¿Cree que exista otra forma de efectuar la inversión del contenido de un archivo sin necesidad de usar una pila?
-Sí, existen varias formas de lograrlo sin usar una pila explícitamente:
-
-- **Usando listas dinámicas (ArrayList):** se puede almacenar cada línea en una lista y luego recorrerla en orden inverso para escribir el archivo.  
-- **Mediante recursión:** una función recursiva puede leer línea por línea hasta el final del archivo y luego escribir desde la última hasta la primera.  
-- **Utilizando Streams de Java (API moderna):** con `Files.lines()` y `Collections.reverse()` se puede invertir el orden de las líneas de manera funcional y limpia.
-
+### ¿Cree que exista otra forma de efectuar la inversión del contenido de un archivo sin necesidad de usar una pila?
+Sí, existen varias alternativas para invertir el contenido de un archivo sin utilizar una pila explícitamente. Una opción es usar una lista dinámica como ArrayList, almacenando cada línea o carácter y luego recorriéndola en orden inverso para escribir el archivo. También puede hacerse mediante recursión, donde una función lee hasta el final del archivo y luego escribe los datos en orden inverso al retornar.
 En conclusión, la pila es una solución clara y didáctica, pero no la única manera de invertir un archivo.
 
 ---
 
-### 2️⃣ ¿En qué ejemplo de la vida real (no informático) se puede ver reflejado el uso de una pila?
-Un ejemplo cotidiano es una **torre de platos** en una cocina:  
-el último plato que se coloca en la pila es el primero que se retira para usar (*Last In, First Out — LIFO*).  
-Este mismo principio se aplica en estructuras de datos tipo pila dentro de la programación.
+### ¿En qué ejemplo de la vida real (no informático) se puede ver reflejado el uso de una pila?
+Un ejemplo cotidiano es una torre de platos en una cocina. El último plato que se coloca encima de la pila es el primero que se retira cuando se necesita uno, siguiendo el principio LIFO (Last In, First Out). Este comportamiento refleja exactamente cómo funcionan las pilas en programación: el último elemento insertado es el primero en salir.
 
----
-
-## 📄 Licencia
-Este documento forma parte de la **Práctica Programada 2** del curso *Estructuras de Datos (SC-304)*, con fines exclusivamente académicos.  
-
----
-
-© 2025 Nahúm Mejía Castillo — Universidad (indicar nombre de la institución)
