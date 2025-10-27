@@ -1,14 +1,11 @@
+package pilas;
+
 public interface TheStackInterface<Type> {
 
-    Boolean push(Type item);
-
-    Type pop();
-
-    Type peek();
-
-    Boolean empty();
-
-    Integer size();
-
-    String print();
+    Boolean push(Type item);   
+    Type pop();                
+    Type peek();               
+    Boolean empty();         
+    Integer size();            
+    String print();            
 }
