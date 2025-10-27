@@ -3,7 +3,8 @@
 | Curso                   | Estructuras de Datos                  |
 | :---------------------- | :------------------------------------ |
 | Código                  | SC-304                                |
-| Profesor                | Luis Andrés Rojas Matey               |
+| Estudiante              | Nahúm Mejía Castillo                  |
+| Número                  | FI24043887                            | 
 | Valor                   | 15 %                                  |
 | Fecha y hora de entrega | Lunes 27 de octubre antes de las 6 pm |
 
@@ -278,11 +279,31 @@ Como se puede notar, la cola quedará vacía una vez este método se invoque.
 
 En la raíz de su repositorio, en el _Branch_ `main`, debe estar esta carpeta (`CP1`) y todo su contenido (incluyendo este archivo `README.md`), con todos los cambios en el código según las especificaciones. Sin embargo, no debe contener los archivos compilados, es decir, excluir los archivos `.class`.
 
-El código fuente debe incluir, en forma de comentarios, de dónde obtuvo la respuesta/implementación, ya sea con el vínculo (_Link_) de una página o el nombre del chatbot. Ejemplos:
+El código fuente debe incluir, en forma de comentarios, de dónde obtuvo la respuesta/implementación, ya sea con el vínculo (_Link_) de una página o el nombre del chatbot:
 
 ```js
-// https://en.wikipedia.org/wiki/Metallic_mean
-...
-// Gemini
-...
+ Revisión conceptual utilizando ChatGPT, sobre el apartado Recursividad, con respecto a los números metálicos
+ChatGPT para revision de uso de método stack
+
 ```
+
+
+**Cambios realizados:**  
+-Recursividad
+
+Corrección de errores de compilación e implementación de los métodos recursivo e iterativo según la fórmula indicada.  
+Pruebas realizadas con los valores de 0 a 9 para verificar coincidencia entre las tres estrategias.  
+-Pilas:
+
+Ajuste del método `push()` para controlar el desbordamiento correctamente.  
+Modificación de `pop()` y `peek()` para retornar `null` al vaciarse.  
+Pruebas con diferentes valores de capacidad (ej. 3 y 5) para validar overflow y underflow.
+-Colas:
+
+Implementación de `dequeue()` y `getFront()` sin condicionales, utilizando `pollFirst()` y `peekFirst()`.  
+Desarrollo de `getCodons()` que agrupa nucleótidos en tripletas vaciando la cola al final.  
+Ejecución de pruebas con `n=15` (múltiplo de 3) para confirmar resultado esperado.
+**Estado final**  
+Los tres proyectos fueron corregidos, probados y son ejecutados correctamente de acuerdo con las instrucciones del Caso Práctico 1.  
+
+El código compila sin errores en JDK 21 y NetBeans 27.
