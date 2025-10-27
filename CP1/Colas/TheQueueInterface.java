@@ -1,16 +1,12 @@
+package colas;
+
 public interface TheQueueInterface<Type> {
 
-    void enqueue(Type item); // encolar
-
-    Type dequeue(); // desencolar
-
-    Type getFront();
-
-    boolean isEmpty();
-
-    int getSize();
-
-    String[] getCodons();
-
-    String print();
+    void enqueue(Type item);   
+    Type dequeue();            
+    Type getFront();           
+    Boolean isEmpty();        
+    Integer getSize();        
+    String print();            
+    String[] getCodons();      
 }
