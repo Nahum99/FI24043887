@@ -1,2 +1,44 @@
 # Práctica Programada 3
-Carpeta de entrega para la práctica PP3.
+
+Nombre: Nahúm Mejía
+Carné: FI24043887
+Curso: SC-304 – Estructuras de Datos
+Profesor: Luis Andrés Rojas Matey
+
+- IDE  utilizado
+JDK 21  
+
+- Páginas web consultadas
+
+Documentación de Oracle Java  – LinkedList Class
+
+- Prompts y consultas en chatbots de IA
+
+Utilicé ChatGPT para aclarar dudas y comparar la lógica de los métodos implementados con ejemplos parecidos.
+
+Consultas realizadas:
+
+Confirmar la diferencia entre addFirst y addLast en estructuras circulares en Java.
+
+Validar si la eliminación del último nodo mantiene la circularidad.
+
+
+- Respuestas personales a las preguntas solicitadas:
+
+1) Si tuviera que implementar una estructura tipo Cola (Queue), ¿qué tipo de lista (simple, circular, doblemente enlazada o circular doblemente enlazada) utilizaría y por qué? ¿Y para una estructura tipo Pila (Stack)?
+
+Optaría por una lista doblemente enlazada, ya que facilita agregar elementos al final y eliminar desde el inicio de forma directa, sin tener que recorrer toda la lista.
+Además, el doble enlace permite recorrer la estructura en ambos sentidos si se necesitara extender la funcionalidad.
+
+Usaría una lista simplemente enlazada, porque en una pila solo se trabaja con un extremo.
+Es más liviana, fácil de manejar y suficiente para realizar las operaciones push y pop sin necesidad de punteros dobles.
+
+2) ¿Cuál cree que podría ser una ventaja y una desventaja de utilizar una estructura de tipo lista creada por usted mismo, en vez de las opciones proveídas directamente por los módulos estándar de Java (como por ejemplo List)?
+
+Ventaja:
+Desarrollar la estructura desde cero ayuda a entender cómo se conectan los nodos, cómo se gestionan las referencias y cómo se controla la memoria de manera manual.
+También brinda libertad para personalizar el comportamiento según los objetivos del programa.
+
+Desventaja:
+Se pierde tiempo volviendo a implementar algo que ya está optimizado y probado en las clases del JDK.
+Además, hay mayor riesgo de cometer errores de referencia o de lógica si no se prueban bien todos los casos.
