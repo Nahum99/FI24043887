@@ -5,14 +5,14 @@ Carné: FI24043887
 Curso: SC-304 – Estructuras de Datos
 Profesor: Luis Andrés Rojas Matey
 
-- IDE  utilizado
+## IDE  utilizado
 JDK 21  
 
-- Páginas web consultadas
+## Páginas web consultadas
 
 Documentación de Oracle Java  – LinkedList Class
 
-- Prompts y consultas en chatbots de IA
+## Prompts y consultas en chatbots de IA
 
 Utilicé ChatGPT para aclarar dudas y comparar la lógica de los métodos implementados con ejemplos parecidos.
 
@@ -23,7 +23,7 @@ Confirmar la diferencia entre addFirst y addLast en estructuras circulares en Ja
 Validar si la eliminación del último nodo mantiene la circularidad.
 
 
-- Respuestas personales a las preguntas solicitadas:
+## Respuestas personales a las preguntas solicitadas:
 
 1) Si tuviera que implementar una estructura tipo Cola (Queue), ¿qué tipo de lista (simple, circular, doblemente enlazada o circular doblemente enlazada) utilizaría y por qué? ¿Y para una estructura tipo Pila (Stack)?
 
