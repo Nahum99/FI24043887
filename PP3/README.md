@@ -1,9 +1,9 @@
 # Práctica Programada 3
 
-Nombre: Nahúm Mejía
-Carné: FI24043887
-Curso: SC-304 – Estructuras de Datos
-Profesor: Luis Andrés Rojas Matey
+**Nombre:** Nahúm Mejía  
+**Carné:** FI24043887  
+**Curso:** SC-304 – Estructuras de Datos  
+**Profesor:** Luis Andrés Rojas Matey
 
 ## IDE  utilizado
 JDK 21  
