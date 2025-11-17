@@ -1,55 +1,45 @@
-# README.md – Práctica Programada 4
+# Práctica Programada 3
 
-## Datos del estudiante
-- **Nombre:** Nahum Mejía Castillo  
-- **Carné:** FI24043887  
+**Nombre:** Nahúm Mejía  
+**Carné:** FI24043887  
+**Curso:** SC-304 – Estructuras de Datos  
+**Profesor:** Luis Andrés Rojas Matey
 
-## IDE utilizado
-- NetBeans 21 con JDK 21 (Java SE 21 LTS)
+## IDE  utilizado
+JDK 21  
 
 ## Páginas web consultadas
-Estas páginas fueron utilizadas únicamente como apoyo para recordar conceptos de árboles binarios y estructuras iterativas:
-- https://www.geeksforgeeks.org/binary-tree-array-representation/
-- https://www.programiz.com/dsa/stack
-- https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
 
-## Prompts utilizados (consultas hechas a chatbots de IA)
+Documentación de Oracle Java  – LinkedList Class
 
-### Prompt 1
-**Pregunta:**  
-> ¿Cómo se implementa el recorrido preorden de forma iterativa utilizando un Stack en un árbol binario almacenado en un arreglo usando las posiciones left = 2i+1 y right = 2i+2?
+## Prompts y consultas en chatbots de IA
 
-**Respuesta resumida:**  
-El recorrido preorden iterativo consiste en:
-1. Insertar la raíz en el Stack.  
-2. Extraer el índice y procesarlo.  
-3. Insertar primero el hijo derecho si existe.  
-4. Insertar luego el hijo izquierdo si existe.  
-Esto mantiene el orden *root → left → right* sin usar recursión.
+Utilicé ChatGPT para aclarar dudas y comparar la lógica de los métodos implementados con ejemplos parecidos.
 
----
+Consultas realizadas:
 
-### Prompt 2
-**Pregunta:**  
-> ¿Cómo funciona el recorrido postorden iterativo y por qué se debe controlar el último nodo visitado cuando se trabaja con árboles representados en un arreglo?
+Confirmar la diferencia entre addFirst y addLast en estructuras circulares en Java.
 
-**Respuesta resumida:**  
-El recorrido postorden iterativo requiere:
-- Bajar por la izquierda como en inorden.  
-- Antes de procesar el nodo, revisar si el hijo derecho existe y aún no ha sido visitado.  
-- Usar una variable `lastVisited` para evitar procesar un nodo antes que su hijo derecho.  
-Esto permite obtener el orden *left → right → root* usando un solo Stack.
+Validar si la eliminación del último nodo mantiene la circularidad.
 
----
 
-### Prompt 3
-**Pregunta:**  
-> ¿Qué validaciones deben hacerse antes de acceder a los índices calculados con 2i+1 y 2i+2 en un árbol guardado en un arreglo para evitar errores de límite?
+## Respuestas personales a las preguntas solicitadas:
 
-**Respuesta resumida:**  
-Se debe verificar:
-- Que el índice esté dentro del arreglo (`i < length`).  
-- Que la posición no sea null antes de procesarla.  
-Esto evita excepciones como `ArrayIndexOutOfBoundsException` y garantiza un recorrido seguro.
+1) Si tuviera que implementar una estructura tipo Cola (Queue), ¿qué tipo de lista (simple, circular, doblemente enlazada o circular doblemente enlazada) utilizaría y por qué? ¿Y para una estructura tipo Pila (Stack)?
 
----
+Optaría por una lista doblemente enlazada, ya que facilita agregar elementos al final y eliminar desde el inicio de forma directa, sin tener que recorrer toda la lista.
+Además, el doble enlace permite recorrer la estructura en ambos sentidos si se necesitara extender la funcionalidad.
+
+Usaría una lista simplemente enlazada, porque en una pila solo se trabaja con un extremo.
+Es más liviana, fácil de manejar y suficiente para realizar las operaciones push y pop sin necesidad de punteros dobles.
+
+2) ¿Cuál cree que podría ser una ventaja y una desventaja de utilizar una estructura de tipo lista creada por usted mismo, en vez de las opciones proveídas directamente por los módulos estándar de Java (como por ejemplo List)?
+
+Ventaja:
+Desarrollar la estructura desde cero ayuda a entender cómo se conectan los nodos, cómo se gestionan las referencias y cómo se controla la memoria de manera manual.
+También brinda libertad para personalizar el comportamiento según los objetivos del programa.
+
+Desventaja:
+Se pierde tiempo volviendo a implementar algo que ya está optimizado y probado en las clases del JDK.
+Además, hay mayor riesgo de cometer errores de referencia o de lógica si no se prueban bien todos los casos.
+
