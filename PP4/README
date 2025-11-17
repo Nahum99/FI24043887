@@ -1,0 +1,55 @@
+# README.md – Práctica Programada 4
+
+## Datos del estudiante
+- **Nombre:** Nahum Mejía Castillo  
+- **Carné:** FI24043887  
+
+## IDE utilizado
+- NetBeans 21 con JDK 21 (Java SE 21 LTS)
+
+## Páginas web consultadas
+Estas páginas fueron utilizadas únicamente como apoyo para recordar conceptos de árboles binarios y estructuras iterativas:
+- https://www.geeksforgeeks.org/binary-tree-array-representation/
+- https://www.programiz.com/dsa/stack
+- https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+
+## Prompts utilizados (consultas hechas a chatbots de IA)
+
+### Prompt 1
+**Pregunta:**  
+> ¿Cómo se implementa el recorrido preorden de forma iterativa utilizando un Stack en un árbol binario almacenado en un arreglo usando las posiciones left = 2i+1 y right = 2i+2?
+
+**Respuesta resumida:**  
+El recorrido preorden iterativo consiste en:
+1. Insertar la raíz en el Stack.  
+2. Extraer el índice y procesarlo.  
+3. Insertar primero el hijo derecho si existe.  
+4. Insertar luego el hijo izquierdo si existe.  
+Esto mantiene el orden *root → left → right* sin usar recursión.
+
+---
+
+### Prompt 2
+**Pregunta:**  
+> ¿Cómo funciona el recorrido postorden iterativo y por qué se debe controlar el último nodo visitado cuando se trabaja con árboles representados en un arreglo?
+
+**Respuesta resumida:**  
+El recorrido postorden iterativo requiere:
+- Bajar por la izquierda como en inorden.  
+- Antes de procesar el nodo, revisar si el hijo derecho existe y aún no ha sido visitado.  
+- Usar una variable `lastVisited` para evitar procesar un nodo antes que su hijo derecho.  
+Esto permite obtener el orden *left → right → root* usando un solo Stack.
+
+---
+
+### Prompt 3
+**Pregunta:**  
+> ¿Qué validaciones deben hacerse antes de acceder a los índices calculados con 2i+1 y 2i+2 en un árbol guardado en un arreglo para evitar errores de límite?
+
+**Respuesta resumida:**  
+Se debe verificar:
+- Que el índice esté dentro del arreglo (`i < length`).  
+- Que la posición no sea null antes de procesarla.  
+Esto evita excepciones como `ArrayIndexOutOfBoundsException` y garantiza un recorrido seguro.
+
+---
