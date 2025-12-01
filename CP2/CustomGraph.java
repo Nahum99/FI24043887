@@ -1,3 +1,5 @@
+package cp2;
+
 import java.util.Arrays;
 
 public class CustomGraph {
