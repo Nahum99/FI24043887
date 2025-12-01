@@ -1,4 +1,8 @@
 package cp2;
+// Implementación basada en explicación de estructuras de datos 
+// consultadas en:
+// https://www.geeksforgeeks.org
+// Asistencia adicional(ChatGPT)
 
 import java.util.Arrays;
 
