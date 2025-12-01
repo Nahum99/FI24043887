@@ -1,3 +1,5 @@
+package cp2;
+
 public class CustomQueue {
 
     private QueueNode _head;
